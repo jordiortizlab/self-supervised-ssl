@@ -74,6 +74,8 @@ def run(fd, broken, fails, arch_config, pre_config, encoder, mode, seed, base_ve
             master_seed=seed,
             version=f"{base_version}_pretrained@{broken:.2f}@{fails:.2f}",
         )
+    elif mode == "rbm2":
+        
     else:
         run_ae_or_metric(
             fd,
