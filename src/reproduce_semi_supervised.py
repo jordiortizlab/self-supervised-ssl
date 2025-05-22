@@ -123,7 +123,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "--mode",
         default="metric",
-        choices=["metric", "autoencoder", "rbm"],
+        choices=["metric", "autoencoder", "rbm", "rbm2", "rbm3", "rbm4"],
         help="metric or autoencoder pre-training mode",
     )
     parser.add_argument(
