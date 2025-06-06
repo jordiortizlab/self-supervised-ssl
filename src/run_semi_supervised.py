@@ -71,7 +71,7 @@ class AllDataSplitter:
             yield list(x), []
 
 
-@ray.remote(num_cpus=3, num_gpus=0.5)
+@ray.remote(num_cpus=2, num_gpus=1)
 def ray_train(
     source,
     percent_broken,
